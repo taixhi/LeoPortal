@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="LeoPortal makes researching easier with Alexa">
+    <meta name="author" content="Taichi Kato">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>LeoPortal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+  </head>
+
+  <body data-gr-c-s-loaded="true">
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+          </div>
+
+          <div class="inner cover">
+            <p class="lead"><img id="leo_pic" src="img/leo.png"></p>
+            <h1 class="cover-heading">LeoPortal</h1>
+            <p class="lead">Enter your key below to access your Research results!</p>
+            <p class="lead">
+            <form method="get" action="results">
+              <p class="lead">
+            	 <input class="user_input" type="text" name="userID">
+              </p>
+              <p class="lead">
+                <input class="btn btn-lg btn-default" href="results" type="submit" name="ShowResult" onclick="showLoad()">
+              </p>
+            	<style type="text/css"></style>
+            </form>
+            </p>
+         
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+<p>Created with love by  <a href="https://getquesto.com">Team Leo</a>, website by <a href="https://taichikato.com">@taichi</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script type="text/javascript">
+    $( "btn" ).click(function() {
+      $( "site-wrapper" ).remove();
+    });
+    function showLoad(){
+      $( "site-wrapper" ).style.display = "none";
+    }
+
+    </script>
+    <script src="css/bootstrap.min.js"></script>
+     
+
+</body></html>
