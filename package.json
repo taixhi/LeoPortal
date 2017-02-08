@@ -1,0 +1,15 @@
+{
+  "name": "LeoPortal",
+  "title": "LeoPortal",
+  "version": "0.0.1",
+  "homepage": "http://getquesto.com",
+  "author": "Taichi Kato",
+
+  "dependencies": {
+    "simple-line-icons": "^2.3.2",
+    "express": "^4.10.2",
+    "pug": ""
+    "aws-sdk": ""
+    "node-bing-api": ""
+  }
+}
