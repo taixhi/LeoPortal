@@ -1,0 +1,65 @@
+doctype html
+html
+  head
+    title Research Results
+    // Bootstrap core CSS
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    // Custom styles for this template
+    link(href='css/cover.css', rel='stylesheet')
+  body
+    .site-wrapper
+      .site-wrapper-inner
+        .cover-container
+          .masthead.clearfix
+            .inner
+              h3.masthead-brand LeoPortal
+              |               
+              nav.nav.nav-masthead
+                a.nav-link.active(href='http://localhost:3000/') Home
+                |                 
+                a.nav-link(href='') Contact
+          .results           
+
+            .inner.cover
+              p.lead
+                img#leo_pic(src=imgurl)
+                hr.divider 
+              h1.cover-heading= title
+              |             
+              p.lead= info
+              div.bibBox
+                |Bibiliography
+                each val, index in array
+                  a(href=array[index])
+                    p.cite.lead= array[index]
+              div.bibBox
+                |Related Resources
+                each val, index in array
+                  a(href=relatedResources[index])
+                    p.cite.lead= relatedResources[index]
+              p.lead
+                a.btn.btn-lg.btn-secondary(href='#') Read more
+
+
+
+            .inner
+              p
+                | Created with love by  
+                a(href='https://getquesto.com') Team Leo
+                | , website by 
+                a(href='http://taichikato.com') @taichi
+                | .
+    //
+      Bootstrap core JavaScript
+      ==================================================
+    // Placed at the end of the document so the pages load faster
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+    |     
+    script.
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
+    |     
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+    |     
+    script(src='../../dist/js/bootstrap.min.js')
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    script(src='../../assets/js/ie10-viewport-bug-workaround.js')
